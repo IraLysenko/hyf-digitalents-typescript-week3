@@ -9,7 +9,6 @@ const rl = readline.createInterface({
 });
 
 game.render();
-
 rl.prompt();
 
 rl.on('line', (line: string) => {

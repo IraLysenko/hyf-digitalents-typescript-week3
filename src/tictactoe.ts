@@ -8,21 +8,16 @@ class user {
 
 
 class Game {
+    board: Array<string> = [];
+
     public render() {
-        const gameBord = () => {
-            let numbersArray = [[1,2,3], [4,5,6],[7,8,9]];
-
-            numbersArray.forEach((row, i) => {
-
-                console.log(row);
-            });
-        };
-
-        console.log(gameBord)
+        console.log(this.board);
     }
 
     public command(command: string) {
-        console.log(command)
+        let value = command;
+        this.board.push(value);
+        console.log(this.board);
     }
 }
 
